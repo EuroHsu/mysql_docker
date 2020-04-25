@@ -13,3 +13,4 @@ services:
       MYSQL_PASSWORD: user1pw
     volumes:
       - "./mysqldata:/var/lib/mysql"
+      - "./database/mydb.sql:/docker-entrypoint-initdb.d/mydb.dql"
